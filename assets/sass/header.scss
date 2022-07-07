@@ -1,0 +1,68 @@
+.header {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.header-info {
+    color: $dark;
+    padding: 14px;
+    border-top: 1px solid #b9afaf;
+}
+
+.header-info strong {
+    font-weight: 500;
+}
+
+.header-logo .logo {
+    height: 30px;
+    padding: 5px;
+}
+
+.header-heading {
+    padding: 30px;
+}
+
+.header-heading .heading-title span,
+.header-heading .heading-content span {
+    display: block;
+}
+
+.header-heading .heading-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: $dark;
+}
+
+.header-heading .heading-content {
+    color: $dark;
+}
+
+.header-info button {
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+// On desktop
+@media screen and (min-width: 900px) {
+    .header-logo {
+        text-align: left;
+    }
+
+    .header-logo .logo {
+        height: auto;
+        width: 210px;
+        margin-left: 5px;
+    }
+
+    .header-heading .heading-title span,
+    .header-heading .heading-content span {
+        display: inline;
+    }
+
+    .header-heading {
+        padding: 70px 30px;
+    }
+}

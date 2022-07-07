@@ -1,0 +1,16 @@
+.btn {
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 22px;
+}
+
+.btn-primary {
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: #9356DC;
+    color: #fff;
+
+    &:hover {
+        background: linear-gradient(#9356DC, #FF79DA);
+    }
+}

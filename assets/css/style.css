@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: #e1e1e1;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+
+.shrikhand {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.item-baseline {
+  align-items: baseline;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-gray {
+  background: #e1e1e1;
+}
+
+.bg-lightgray {
+  background: #f4f4f4;
+}
+
+.btn {
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 22px;
+}
+
+.btn-primary {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: #9356DC;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+
+.header {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.header-info {
+  color: #262626;
+  padding: 14px;
+  border-top: 1px solid #b9afaf;
+}
+
+.header-info strong {
+  font-weight: 500;
+}
+
+.header-logo .logo {
+  height: 30px;
+  padding: 5px;
+}
+
+.header-heading {
+  padding: 30px;
+}
+
+.header-heading .heading-title span,
+.header-heading .heading-content span {
+  display: block;
+}
+
+.header-heading .heading-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.header-heading .heading-content {
+  color: #262626;
+}
+
+.header-info button {
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+@media screen and (min-width: 900px) {
+  .header-logo {
+    text-align: left;
+  }
+  .header-logo .logo {
+    height: auto;
+    width: 210px;
+    margin-left: 5px;
+  }
+  .header-heading .heading-title span,
+.header-heading .heading-content span {
+    display: inline;
+  }
+  .header-heading {
+    padding: 70px 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
