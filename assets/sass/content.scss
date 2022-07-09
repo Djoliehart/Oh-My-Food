@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand:wght@300;400;700&display=swap');
 
-$dark: #262626;
-$darkgray: #848484;
-$gray: #e1e1e1;
-$lightgray: #f4f4f4;
+$minDesktop: 900px;
 
 body {
     color: $gray;
@@ -16,6 +13,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 18px;
 }
 
 .shrikhand {

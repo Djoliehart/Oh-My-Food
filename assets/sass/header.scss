@@ -46,7 +46,7 @@
 }
 
 // On desktop
-@media screen and (min-width: 900px) {
+@media screen and (min-width: $minDesktop) {
     .header-logo {
         text-align: left;
     }
