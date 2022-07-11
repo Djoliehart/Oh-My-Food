@@ -1,0 +1,43 @@
+.footer {
+    background: rgb(27, 27, 27);
+    padding: 20px;
+}
+
+.footer-logo .logo path {
+    fill: rgb(218, 218, 218) !important;
+}
+
+.footer-item a,
+.footer-item i {
+    color: rgb(218, 218, 218);
+    font-size: 14px;
+}
+
+.footer-item a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+// On desktop
+@media screen and (min-width: $minDesktop) {
+    .footer {
+        background: rgb(27, 27, 27);
+        padding: 40px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+}
