@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand:wght@300;400;700&display=swap');
 
+$minTablette: 600px;
 $minDesktop: 900px;
 
 body {
-    color: $gray;
+    color: $darkgray;
     font-size: 16px;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
@@ -17,10 +18,70 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+img {
+    max-width: 100%;
+}
+
 .title {
     font-size: 18px;
 }
 
 .shrikhand {
     font-family: 'Shrikhand', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.item-baseline {
+    align-items: baseline;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
 }

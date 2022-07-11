@@ -7,10 +7,10 @@
     color: $dark;
     padding: 14px;
     border-top: 1px solid #b9afaf;
-}
 
-.header-info strong {
-    font-weight: 500;
+    strong {
+        font-weight: 500;
+    }
 }
 
 .header-logo .logo {
@@ -20,21 +20,21 @@
 
 .header-heading {
     padding: 30px;
-}
 
-.header-heading .heading-title span,
-.header-heading .heading-content span {
-    display: block;
-}
+    .heading-title span,
+    .heading-content span {
+        display: block;
+    }
 
-.header-heading .heading-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: $dark;
-}
+    .heading-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: $dark;
+    }
 
-.header-heading .heading-content {
-    color: $dark;
+    .heading-content {
+        color: $dark;
+    }
 }
 
 .header-info button {
@@ -49,20 +49,20 @@
 @media screen and (min-width: $minDesktop) {
     .header-logo {
         text-align: left;
-    }
 
-    .header-logo .logo {
-        height: auto;
-        width: 210px;
-        margin-left: 5px;
-    }
-
-    .header-heading .heading-title span,
-    .header-heading .heading-content span {
-        display: inline;
+        .logo {
+            height: auto;
+            width: 210px;
+            margin-left: 5px;
+        }
     }
 
     .header-heading {
         padding: 70px 30px;
+
+        .heading-title span,
+        .heading-content span {
+            display: inline;
+        }
     }
 }
