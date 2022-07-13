@@ -242,6 +242,8 @@ img {
 .card-title {
   margin: 4px 0;
   font-weight: 600;
+  text-decoration: none;
+  color: #181818;
 }
 
 .card-text {
@@ -310,6 +312,22 @@ img {
   color: #000;
 }
 
+.restaurant-header {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+}
+.restaurant-header .logo {
+  height: 30px;
+  vertical-align: middle;
+}
+.restaurant-header .icon {
+  position: absolute;
+  left: 20px;
+  top: calc(50% - 8px);
+  color: rgb(33, 33, 33);
+}
+
 @media screen and (min-width: 900px) {
   .header-logo {
     text-align: left;
@@ -326,6 +344,10 @@ img {
 .header-heading .heading-content span {
     display: inline;
   }
+  .restaurant-header {
+    text-align: right;
+    margin-right: 10px;
+  }
 }
 .operation-actions {
   padding-left: 6px;
@@ -339,11 +361,24 @@ img {
   box-shadow: 1px 7px 5px #ddd;
 }
 
+.restaurant-slider img {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .restaurant-slider img {
+    max-height: 380px;
+    object-fit: cover;
+  }
+}
 @media screen and (min-width: 900px) {
   .operation-actions {
     padding-left: 0;
     display: flex;
     gap: 30px;
+  }
+  .restaurant-slider img {
+    max-height: 480px;
   }
 }
 .footer {

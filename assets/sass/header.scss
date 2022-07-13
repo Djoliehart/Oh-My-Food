@@ -45,6 +45,24 @@
     color: #000;
 }
 
+.restaurant-header {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+
+    .logo {
+        height: 30px;
+        vertical-align: middle;
+    }
+
+    .icon {
+        position: absolute;
+        left: 20px;
+        top: calc(50% - 8px);
+        color: rgb(33, 33, 33);
+    }
+}
+
 // On desktop
 @media screen and (min-width: $minDesktop) {
     .header-logo {
@@ -64,5 +82,10 @@
         .heading-content span {
             display: inline;
         }
+    }
+
+    .restaurant-header {
+        text-align: right;
+        margin-right: 10px;
     }
 }
