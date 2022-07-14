@@ -11,120 +11,39 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Oh my food</title>
+    <title>Restaurant la palette du goût</title>
 </head>
 <body>
+    <!-- Header -->
+    <header class="restaurant-header">
+        <a href="index.html">
+            <i class="fa-solid fa-arrow-left-long icon"></i>
+        </a>
+        <img class="logo" src="assets/img/logo/ohmyfood.png" alt="Oh my food">
+    </header>
+
+    <!-- Main -->
     <main>
-        <!-- Header -->
-        <header class="header">
-            <div class="header-logo">
-                <img class="logo" src="assets/img/logo/ohmyfood.png" alt="Oh my food">
+        <section>
+            <div class="restaurant-slider">
+                <img src="assets/img/restaurants/toa-heftiba.jpg" alt="Restaurant à la française">
             </div>
-            <div class="header-info bg-gray">
-                <i class="fa-solid fa-location-dot"></i>
-                <strong class="ml-8">Paris, Belleville</strong>
-            </div>
-            <div class="header-heading bg-lightgray">
-                <h1 class="heading-title">
-                    Réservez le menu qui <span>vous convient</span>
-                </h1>
-                <p class="heading-content">
-                    Découvrez des restaurants d'exception,
-                    <span>sélectionnés par nos soins.</span>
-                </p>
-                <button type="button" class="btn btn-primary mt-20 shadow">Explorer nos restaurants</button>
-            </div>
-        </header>
+    
+            <!-- Menu -->
+            <div class="container-page bg-lightgray">
+                <!-- Heading title -->
+                <div class="heading-title">
+                    <h2 class="shrikhand title">À la française</h2>
+                    <i class="fa-regular fa-heart icon"></i>
+                </div>
 
-        <!-- Operation -->
-        <div class="operation container">
-            <h2 class="title">Fonctionnement</h2>
-            <!-- Form -->
-            <form class="operation-actions">
-                <button class="btn btn-light btn-icon btn-alert">
-                    <span class="btn-alert-circle">1</span>
-                    <i class="fa-solid fa-font-awesome"></i>
-                    <span>Choisissez un restaurant</span>
-                </button>
-                <button class="btn btn-light btn-icon btn-alert">
-                    <span class="btn-alert-circle">2</span>
-                    <i class="fa-solid fa-euro-sign"></i>
-                    <span>Composez votre menu</span>
-                </button>
-                <button class="btn btn-light btn-icon btn-alert active">
-                    <span class="btn-alert-circle">3</span>
-                    <i class="fa-solid fa-people-roof"></i>
-                    <span>Dégustez au restaurant</span>
-                </button>
-            </form>
-        </div>
+                <!-- TODO: REMOVE -->
+                <div style="min-height: 400px;"></div>
 
-        <!-- Restaurants -->
-        <section class="container bg-lightgray py-40">
-            <h2 class="title">Restaurants</h2>
-            <div class="card-container">
-                <!-- Card -->
-                <article class="card">
-                    <span class="card-flag">Nouveau</span>
-                    <div class="card-img">
-                        <img src="assets/img/restaurants/jay-wennington.jpg" alt="Plat Ménilmontant">
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <a href="restaurant-palette-du-goût.html" class="card-title">La palette du goût</a>
-                            <p class="card-text">Ménilmontant</p>
-                        </div>
-                        <button class="card-btn btn-icon" type="button">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                    </div>
-                </article>
-                <!-- Card -->
-                <article class="card">
-                    <span class="card-flag">Nouveau</span>
-                    <div class="card-img">
-                        <img src="assets/img/restaurants/stil.jpg" alt="Plat Charonne">
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <a href="restaurant-note-enchantee.html" class="card-title">La note enchantée</a>
-                            <p class="card-text">Charonne</p>
-                        </div>
-                        <button class="card-btn btn-icon" type="button">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                    </div>
-                </article>
-                <!-- Card -->
-                <article class="card">
-                    <div class="card-img">
-                        <img src="assets/img/restaurants/toa-heftiba.jpg" alt="Plat Cité Rouge">
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <a href="restaurant-a-la-francaise.html" class="card-title">À la française</a>
-                            <p class="card-text">Cité Rouge</p>
-                        </div>
-                        <button class="card-btn btn-icon" type="button">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                    </div>
-                </article>
-                <!-- Card -->
-                <article class="card">
-                    <div class="card-img">
-                        <img src="assets/img/restaurants/louis-hansel-shotsoflouis.jpg" alt="Plat Folie-Méricourt">
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <a href="restaurant-le-delice-des-sens.html" class="card-title">La délice du sens</a>
-                            <p class="card-text">Folie-Méricourt</p>
-                        </div>
-                        <button class="card-btn btn-icon" type="button">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                    </div>
-                </article>
+                <!-- Ending btn -->
+                <div class="ending-btn text-center">
+                    <button type="button" class="btn btn-primary mt-20 shadow">Commander</button>
+                </div>
             </div>
         </section>
 

@@ -13,6 +13,38 @@
 
 .restaurant-slider img {
     width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.container-page {
+    position: relative;
+    max-width: 1140px;
+    margin: -40px auto 0 auto;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 40px 40px 0 0;
+
+    .heading-title {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .icon {
+            font-size: 30px;
+        }
+    }
+
+    .btn {
+        padding: 14px 45px;
+        margin-bottom: 30px;
+    }
 }
 
 // On tablette
@@ -33,5 +65,13 @@
 
     .restaurant-slider img {
         max-height: 480px;
+    }
+}
+
+// On large desktop
+@media screen and (min-width: 1200px) {
+    .container-page {
+        margin: -40px auto 40px auto;
+        border-radius: 40px;
     }
 }

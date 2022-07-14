@@ -144,8 +144,20 @@ img {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .text-center {
   text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.shadow {
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn {
@@ -153,6 +165,7 @@ img {
   font-size: 14px;
   font-weight: 400;
   padding: 10px 22px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -363,6 +376,34 @@ img {
 
 .restaurant-slider img {
   width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.container-page {
+  position: relative;
+  max-width: 1140px;
+  margin: -40px auto 0 auto;
+  padding: 20px;
+  z-index: 2;
+  border-radius: 40px 40px 0 0;
+}
+.container-page .heading-title {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-page .heading-title .title {
+  font-size: 30px;
+  margin: 0;
+}
+.container-page .heading-title .icon {
+  font-size: 30px;
+}
+.container-page .btn {
+  padding: 14px 45px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 600px) {
@@ -379,6 +420,12 @@ img {
   }
   .restaurant-slider img {
     max-height: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-page {
+    margin: -40px auto 40px auto;
+    border-radius: 40px;
   }
 }
 .footer {
