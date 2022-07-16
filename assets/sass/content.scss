@@ -18,12 +18,24 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+strong {
+    font-weight: 600;
+    color: #262626;
+}
+
 img {
     max-width: 100%;
 }
 
 .title {
     font-size: 18px;
+}
+
+.title-border {
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: $tertiary;
 }
 
 .shrikhand {
@@ -42,6 +54,14 @@ img {
 
 .ml-8 {
     margin-left: 8px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
 }
 
 .mt-10 {
@@ -84,6 +104,10 @@ img {
 
 .justify-between {
     justify-content: space-between;
+}
+
+.align-end {
+    align-items: end;
 }
 
 .text-center {

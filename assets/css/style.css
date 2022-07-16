@@ -80,12 +80,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+strong {
+  font-weight: 600;
+  color: #262626;
+}
+
 img {
   max-width: 100%;
 }
 
 .title {
   font-size: 18px;
+}
+
+.title-border {
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
 }
 
 .shrikhand {
@@ -104,6 +116,14 @@ img {
 
 .ml-8 {
   margin-left: 8px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
 }
 
 .mt-10 {
@@ -146,6 +166,10 @@ img {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.align-end {
+  align-items: end;
 }
 
 .text-center {
@@ -223,7 +247,7 @@ img {
   border-radius: 12px;
   background: #fff;
   margin-top: 15px;
-  box-shadow: 1px 7px 5px #ddd;
+  box-shadow: 1px 7px 5px rgb(230, 230, 230);
 }
 
 .card-flag {
@@ -247,7 +271,7 @@ img {
 }
 
 .card-content {
-  padding: 10px;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -262,6 +286,11 @@ img {
 .card-text {
   margin: 4px 0;
   font-weight: 400;
+}
+
+.card-price {
+  margin-bottom: 5px;
+  margin-right: 10px;
 }
 
 .card-btn {
@@ -404,6 +433,20 @@ img {
 .container-page .btn {
   padding: 14px 45px;
   margin-bottom: 30px;
+}
+
+.restaurant-menu-step {
+  margin-bottom: 30px;
+}
+
+.menu-step-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  color: rgb(120, 120, 120);
+  font-weight: 300;
 }
 
 @media screen and (min-width: 600px) {
