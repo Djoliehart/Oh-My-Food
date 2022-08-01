@@ -38,6 +38,16 @@ img {
     background-color: $tertiary;
 }
 
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .shrikhand {
     font-family: 'Shrikhand', sans-serif;
 }

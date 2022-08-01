@@ -100,6 +100,16 @@ img {
   background-color: #99E2D0;
 }
 
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .shrikhand {
   font-family: "Shrikhand", sans-serif;
 }
@@ -196,8 +206,11 @@ img {
   background: linear-gradient(#FF79DA, #9356DC);
   border: #9356DC;
   color: #fff;
+  transition: opacity 0.3s, box-shadow 0.2s;
 }
 .btn-primary:hover {
+  box-shadow: unset;
+  opacity: 0.8;
   background: linear-gradient(#9356DC, #FF79DA);
 }
 
@@ -205,6 +218,7 @@ img {
   background: #f4f4f4;
   border: #f4f4f4;
   color: #262626;
+  transition: background 0.3s ease-in-out;
 }
 .btn-light:hover, .btn-light.active {
   background: #dedcf2;
@@ -244,10 +258,45 @@ img {
 
 .card {
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
   border-radius: 12px;
   background: #fff;
   margin-top: 15px;
   box-shadow: 1px 7px 5px rgb(230, 230, 230);
+  animation: slidein 1s;
+}
+.card:hover .card-price {
+  margin-right: 90px;
+}
+.card:hover .card-check {
+  right: 0;
+}
+.card:hover .card-check .icon {
+  transform: rotate(360deg);
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+.card-check {
+  border: 1px solid #99E2D0;
+  background: #99E2D0;
+  position: absolute;
+  right: -80px;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  border-radius: 0 12px 12px 0;
+  transition: right 0.4s;
+}
+.card-check .icon {
+  color: #fff;
+  font-size: 25px;
+  transition: transform 0.6s ease-in;
 }
 
 .card-flag {
@@ -291,12 +340,40 @@ img {
 .card-price {
   margin-bottom: 5px;
   margin-right: 10px;
+  transition: margin-right 0.4s;
 }
 
 .card-btn {
   border: transparent;
   background: transparent;
   font-size: 18px;
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.card-btn .icon-empty,
+.card-btn .icon-full {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 9px);
+}
+.card-btn .icon-empty {
+  transition: opacity 0.4s ease-in-out;
+}
+.card-btn .icon-full {
+  background: -webkit-linear-gradient(bottom left, #FF79DA 30%, #9656DC 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+.card-btn:hover .icon-empty {
+  opacity: 0;
+}
+.card-btn:hover .icon-full {
+  opacity: 1;
 }
 
 @media screen and (min-width: 600px) {

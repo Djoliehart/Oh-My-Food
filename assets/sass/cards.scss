@@ -1,9 +1,51 @@
 .card {
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
     border-radius: 12px;
     background: #fff;
     margin-top: 15px;
     box-shadow: 1px 7px 5px rgb(230, 230, 230);
+    animation: slidein 1s;
+
+    &:hover {
+        .card-price {
+            margin-right: calc(10px + 80px);
+        }
+
+        .card-check {
+            right: 0;
+
+            .icon {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.card-check {
+    border: 1px solid $tertiary;
+    background: $tertiary;
+    position: absolute;
+    right: -80px;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    border-radius: 0 12px 12px 0;
+    transition: right .4s;
+
+    .icon {
+        color: #fff;
+        font-size: 25px;
+        transition: transform .6s ease-in;
+    }
 }
 
 .card-flag {
@@ -47,12 +89,47 @@
 .card-price {
     margin-bottom: 5px;
     margin-right: 10px;
+    transition: margin-right .4s;
 }
 
 .card-btn {
     border: transparent;
     background: transparent;
     font-size: 18px;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+
+    .icon-empty,
+    .icon-full {
+        position: absolute;
+        top: calc(50% - 9px);
+        left: calc(50% - 9px);
+    }
+
+    .icon-empty {
+        transition: opacity .4s ease-in-out;
+    }
+
+    .icon-full {
+        background: -webkit-linear-gradient(bottom left, #FF79DA 30%, #9656DC 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all .8s ease-in-out;
+    }
+
+    &:hover {
+        .icon-empty {
+            opacity: 0;
+        }
+
+        .icon-full {
+            opacity: 1;
+        }
+    }
 }
 
 // On tablette

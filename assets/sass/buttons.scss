@@ -10,8 +10,11 @@
     background: linear-gradient($secondary, $primary);
     border: $primary;
     color: #fff;
+    transition: opacity .3s, box-shadow .2s;
 
     &:hover {
+        box-shadow: unset;
+        opacity: .8;
         background: linear-gradient($primary, $secondary);
     }
 }
@@ -20,6 +23,7 @@
     background: $lightgray;
     border: $lightgray;
     color: $dark;
+    transition: background .3s ease-in-out;
 
     &:hover, &.active {
         background: #dedcf2;
