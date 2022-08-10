@@ -116,8 +116,8 @@ img {
 
 .container {
   max-width: 1140px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 .ml-5 {
@@ -221,8 +221,8 @@ img {
   transition: background 0.3s ease-in-out;
 }
 .btn-light:hover, .btn-light.active {
-  background: #dedcf2;
-  border: #dedcf2;
+  background: #f4ebfd;
+  border: #f4ebfd;
 }
 
 .btn-icon {
@@ -275,6 +275,11 @@ img {
 .card:hover .card-check .icon {
   transform: rotate(360deg);
 }
+.card a {
+  width: 100%;
+  color: #7a7a7a;
+  text-decoration: none;
+}
 
 @keyframes slidein {
   from {
@@ -323,6 +328,11 @@ img {
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
+}
+.card-content div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card-title {
@@ -388,6 +398,30 @@ img {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.loader {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: loaderout 0.4s forwards;
+  animation-delay: 1s;
+}
+.loader .loader-icon {
+  margin: auto;
+  font-size: 38px;
+  color: #eee;
+}
+
+@keyframes loaderout {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 .header {
   text-align: center;
   padding-top: 5px;
@@ -396,7 +430,8 @@ img {
 .header-info {
   color: #262626;
   padding: 14px;
-  border-top: 1px solid #b9afaf;
+  background: #e6e6e6;
+  border-top: 2px solid #d7d6d6;
 }
 .header-info strong {
   font-weight: 500;
@@ -420,7 +455,7 @@ img {
   color: #262626;
 }
 .header-heading .heading-content {
-  color: #262626;
+  color: #848484;
 }
 
 .header-info button {

@@ -6,7 +6,8 @@
 .header-info {
     color: $dark;
     padding: 14px;
-    border-top: 1px solid #b9afaf;
+    background: #e6e6e6;
+    border-top: 2px solid #d7d6d6;
 
     strong {
         font-weight: 500;
@@ -33,7 +34,7 @@
     }
 
     .heading-content {
-        color: $dark;
+        color: #848484;
     }
 }
 

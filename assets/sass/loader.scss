@@ -1,0 +1,25 @@
+.loader {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .5);
+    animation: loaderout .4s forwards;
+    animation-delay: 1s;
+
+    .loader-icon {
+        margin: auto;
+        font-size: 38px;
+        color: #eee;
+    }
+}
+
+@keyframes loaderout {
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}

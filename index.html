@@ -14,13 +14,19 @@
     <title>Oh my food</title>
 </head>
 <body>
+
+    <!-- Loader -->
+    <div class="loader">
+        <i class="fas fa-circle-notch fa-spin loader-icon"></i>
+    </div>
+
     <main>
         <!-- Header -->
         <header class="header">
             <div class="header-logo">
                 <img class="logo" src="assets/img/logo/ohmyfood.png" alt="Oh my food">
             </div>
-            <div class="header-info bg-gray">
+            <div class="header-info">
                 <i class="fa-solid fa-location-dot"></i>
                 <strong class="ml-8">Paris, Belleville</strong>
             </div>
@@ -43,17 +49,17 @@
             <form class="operation-actions">
                 <button class="btn btn-light btn-icon btn-alert">
                     <span class="btn-alert-circle">1</span>
-                    <i class="fa-solid fa-font-awesome"></i>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
                     <span>Choisissez un restaurant</span>
                 </button>
                 <button class="btn btn-light btn-icon btn-alert">
                     <span class="btn-alert-circle">2</span>
-                    <i class="fa-solid fa-euro-sign"></i>
+                    <i class="fa-solid fa-list"></i>
                     <span>Composez votre menu</span>
                 </button>
                 <button class="btn btn-light btn-icon btn-alert active">
                     <span class="btn-alert-circle">3</span>
-                    <i class="fa-solid fa-people-roof"></i>
+                    <i class="fa-solid fa-store"></i>
                     <span>Dégustez au restaurant</span>
                 </button>
             </form>
@@ -66,14 +72,14 @@
                 <!-- Card -->
                 <article class="card">
                     <span class="card-flag">Nouveau</span>
-                    <div class="card-img">
+                    <a href="restaurant-palette-du-gout.html" class="card-img">
                         <img src="assets/img/restaurants/jay-wennington.jpg" alt="Plat Ménilmontant">
-                    </div>
+                    </a>
                     <div class="card-content">
-                        <div>
-                            <a href="restaurant-palette-du-gout.html" class="card-title">La palette du goût</a>
+                        <a href="restaurant-palette-du-gout.html">
+                            <h3 class="card-title">La palette du goût</h3>
                             <p class="card-text">Ménilmontant</p>
-                        </div>
+                        </a>
                         <button class="card-btn btn-icon" type="button">
                             <i class="fa-regular fa-heart icon icon-empty"></i>
                             <i class="fa-solid fa-heart icon icon-full"></i>
@@ -83,14 +89,14 @@
                 <!-- Card -->
                 <article class="card">
                     <span class="card-flag">Nouveau</span>
-                    <div class="card-img">
+                    <a href="restaurant-note-enchantee.html" class="card-img">
                         <img src="assets/img/restaurants/stil.jpg" alt="Plat Charonne">
-                    </div>
+                    </a>
                     <div class="card-content">
-                        <div>
-                            <a href="restaurant-note-enchantee.html" class="card-title">La note enchantée</a>
+                        <a href="restaurant-note-enchantee.html">
+                            <h3 class="card-title">La note enchantée</h3>
                             <p class="card-text">Charonne</p>
-                        </div>
+                        </a>
                         <button class="card-btn btn-icon" type="button">
                             <i class="fa-regular fa-heart icon icon-empty"></i>
                             <i class="fa-solid fa-heart icon icon-full"></i>
@@ -99,14 +105,14 @@
                 </article>
                 <!-- Card -->
                 <article class="card">
-                    <div class="card-img">
+                    <a href="restaurant-a-la-francaise.html" class="card-img">
                         <img src="assets/img/restaurants/toa-heftiba.jpg" alt="Plat Cité Rouge">
-                    </div>
+                    </a>
                     <div class="card-content">
-                        <div>
-                            <a href="restaurant-a-la-francaise.html" class="card-title">À la française</a>
+                        <a href="restaurant-a-la-francaise.html">
+                            <h3 class="card-title">À la française</h3>
                             <p class="card-text">Cité Rouge</p>
-                        </div>
+                        </a>
                         <button class="card-btn btn-icon" type="button">
                             <i class="fa-regular fa-heart icon icon-empty"></i>
                             <i class="fa-solid fa-heart icon icon-full"></i>
@@ -115,14 +121,14 @@
                 </article>
                 <!-- Card -->
                 <article class="card">
-                    <div class="card-img">
+                    <a href="restaurant-le-delice-des-sens.html" class="card-img">
                         <img src="assets/img/restaurants/louis-hansel-shotsoflouis.jpg" alt="Plat Folie-Méricourt">
-                    </div>
+                    </a>
                     <div class="card-content">
-                        <div>
-                            <a href="restaurant-le-delice-des-sens.html" class="card-title">La délice du sens</a>
+                        <a href="restaurant-le-delice-des-sens.html">
+                            <h3 class="card-title">La délice du sens</h3>
                             <p class="card-text">Folie-Méricourt</p>
-                        </div>
+                        </a>
                         <button class="card-btn btn-icon" type="button">
                             <i class="fa-regular fa-heart icon icon-empty"></i>
                             <i class="fa-solid fa-heart icon icon-full"></i>
@@ -159,7 +165,7 @@
                     <a href="#">Mentions légales</a>
                 </div>
                 <div class="footer-item">
-                    <a href="#">Contact</a>
+                    <a href="mailto:contact@ohmyfood.fr">Contact</a>
                 </div>
             </div>
         </footer>

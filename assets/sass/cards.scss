@@ -21,6 +21,12 @@
             }
         }
     }
+
+    a {
+        width: 100%;
+        color: #7a7a7a;
+        text-decoration: none;
+    }
 }
 
 @keyframes slidein {
@@ -72,6 +78,12 @@
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
+
+    div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 }
 
 .card-title {
