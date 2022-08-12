@@ -64,3 +64,43 @@
         left: -7px;
     }
 }
+
+.btn-heart {
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+
+    .icon-empty,
+    .icon-full {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .icon-empty {
+        color: #7a7a7a;
+        transition: opacity .4s ease-in-out;
+    }
+
+    .icon-full {
+        background: -webkit-linear-gradient(bottom left, #FF79DA 30%, #9656DC 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all .8s ease-in-out;
+    }
+
+    &:hover {
+        .icon-empty {
+            opacity: 0;
+        }
+
+        .icon-full {
+            opacity: 1;
+        }
+    }
+}

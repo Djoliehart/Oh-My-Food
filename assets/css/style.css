@@ -256,6 +256,39 @@ img {
   left: -7px;
 }
 
+.btn-heart {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+}
+.btn-heart .icon-empty,
+.btn-heart .icon-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn-heart .icon-empty {
+  color: #7a7a7a;
+  transition: opacity 0.4s ease-in-out;
+}
+.btn-heart .icon-full {
+  background: -webkit-linear-gradient(bottom left, #FF79DA 30%, #9656DC 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+.btn-heart:hover .icon-empty {
+  opacity: 0;
+}
+.btn-heart:hover .icon-full {
+  opacity: 1;
+}
+
 .card {
   position: relative;
   overflow: hidden;
@@ -279,6 +312,9 @@ img {
   width: 100%;
   color: #7a7a7a;
   text-decoration: none;
+}
+.card .btn-heart {
+  margin-top: 5px;
 }
 
 @keyframes slidein {
@@ -351,39 +387,6 @@ img {
   margin-bottom: 5px;
   margin-right: 10px;
   transition: margin-right 0.4s;
-}
-
-.card-btn {
-  border: transparent;
-  background: transparent;
-  font-size: 18px;
-  width: 32px;
-  height: 32px;
-  margin-right: 20px;
-  cursor: pointer;
-  position: relative;
-}
-.card-btn .icon-empty,
-.card-btn .icon-full {
-  position: absolute;
-  top: calc(50% - 9px);
-  left: calc(50% - 9px);
-}
-.card-btn .icon-empty {
-  transition: opacity 0.4s ease-in-out;
-}
-.card-btn .icon-full {
-  background: -webkit-linear-gradient(bottom left, #FF79DA 30%, #9656DC 70%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transition: all 0.8s ease-in-out;
-}
-.card-btn:hover .icon-empty {
-  opacity: 0;
-}
-.card-btn:hover .icon-full {
-  opacity: 1;
 }
 
 @media screen and (min-width: 600px) {
