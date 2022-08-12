@@ -415,14 +415,22 @@ img {
 }
 .loader .loader-icon {
   margin: auto;
-  font-size: 38px;
-  color: #eee;
+  width: 60px;
+  animation: loading 1s linear infinite;
 }
 
 @keyframes loaderout {
   to {
     opacity: 0;
     z-index: -1;
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 .header {
